@@ -11,7 +11,7 @@ public class UnliCallTextPackage implements UnliCallOffer {
     @Override
     public String showUnliCallsTextOffer(String telcoName, boolean unliCallText) {
         if (!unliCallText) {
-            return offerMap.getOrDefault(telcoName, "No unlimited calls and texts. Charged per use.");
+            return "No unlimited calls and texts. Charged per use.";
         }
         return offerMap.getOrDefault(telcoName, "No offer available.");
     }
